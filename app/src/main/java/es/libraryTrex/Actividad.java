@@ -50,9 +50,9 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
   }
 
 
-  public Actividad(String tituloEntretenimiento, Coordinador coordinador, String tipoActividad,
-      String dificultadActividad) {
-    super(tituloEntretenimiento);
+  public Actividad(String tituloEntretenimiento, String descripcion, Coordinador coordinador,
+      String tipoActividad, String dificultadActividad) {
+    super(tituloEntretenimiento, descripcion);
     this.coordinador = coordinador;
     this.tipoActividad = tipoActividad;
     this.dificultadActividad = dificultadActividad;

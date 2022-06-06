@@ -6,6 +6,9 @@ public abstract class Entretenimiento {
 
   private long idEntretenimiento;
   private String titulo;
+  private String descripcion;
+
+
 
   // getters
 
@@ -15,6 +18,10 @@ public abstract class Entretenimiento {
 
   public String getTitulo() {
     return titulo;
+  }
+
+  public String getDescripcion() {
+    return descripcion;
   }
 
   // setter
@@ -27,13 +34,18 @@ public abstract class Entretenimiento {
     this.titulo = titulo;
   }
 
+  public void setDescripcion(String descripcion) {
+    this.descripcion = descripcion;
+  }
+
   // contructores
 
   public Entretenimiento() {}
 
 
-  public Entretenimiento(String titulo) {
+  public Entretenimiento(String titulo, String descripcion) {
     this.titulo = titulo;
+    this.descripcion = descripcion;
   }
 
 }

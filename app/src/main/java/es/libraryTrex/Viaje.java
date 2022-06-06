@@ -47,8 +47,9 @@ public class Viaje extends Entretenimiento implements ViajeInterfaz {
 
   public Viaje() {}
 
-  public Viaje(String tituloEntretenimiento, String ciudad, int diasDuracionViaje, float precio) {
-    super(tituloEntretenimiento);
+  public Viaje(String tituloEntretenimiento, String descripcion, String ciudad,
+      int diasDuracionViaje, float precio) {
+    super(tituloEntretenimiento, descripcion);
     this.ciudad = ciudad;
     this.diasDuracionViaje = diasDuracionViaje;
   }
