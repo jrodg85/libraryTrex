@@ -6,13 +6,13 @@ public interface ActividadInterfaz {
 
   Coordinador getCoordinador();
 
-  String getTipoActividadString();
+  String getTipoActividad();
 
   String getDificultadActividad();
 
   void setCoordinador(Coordinador coordinador);
 
-  void setTipoActividadString(String tipoActividad);
+  void setTipoActividad(String tipoActividad);
 
   void setDificultadActividad(String dificultadActividad);
 

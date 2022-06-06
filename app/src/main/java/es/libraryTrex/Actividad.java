@@ -16,7 +16,7 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
   }
 
   @Override
-  public String getTipoActividadString() {
+  public String getTipoActividad() {
     return tipoActividad;
   }
 
@@ -34,7 +34,7 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
   }
 
   @Override
-  public void setTipoActividadString(String tipoActividad) {
+  public void setTipoActividad(String tipoActividad) {
     this.tipoActividad = tipoActividad;
   }
 
@@ -57,5 +57,7 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
     this.tipoActividad = tipoActividad;
     this.dificultadActividad = dificultadActividad;
   }
+
+
 
 }
