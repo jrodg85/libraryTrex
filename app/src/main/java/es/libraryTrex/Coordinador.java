@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public class Coordinador {
 
   // CAMPOS O ATRIBUTOS
+  private long idCoordinador;
   private String nombre;
   private String apellidos;
   private String telefono;
@@ -13,6 +14,11 @@ public class Coordinador {
   private LocalDate fechaNac;
 
   // GETTERS
+
+  public long getIdCoordinador() {
+    return idCoordinador;
+  }
+
   public String getNombre() {
     return nombre;
   }
@@ -38,6 +44,11 @@ public class Coordinador {
   }
 
   // SETTERS
+
+  public void setIdCoordinador(long idCoordinador) {
+    this.idCoordinador = idCoordinador;
+  }
+
   public void setNombre(String nombre) {
     this.nombre = nombre;
   }

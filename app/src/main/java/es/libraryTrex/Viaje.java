@@ -1,19 +1,58 @@
 package es.libraryTrex;
 
-import java.time.LocalDate;
+public class Viaje extends Entretenimiento implements ViajeInterfaz {
 
-public interface Viaje {
+  // atributos
 
-  LocalDate getFechaSalida();
+  private String ciudad;
+  private int diasDuracionViaje;
+  private float precio;
 
-  int getDuracionViaje();
 
-  float getPrecio();
+  // getters
 
-  void setFechaSalida(LocalDate fechaSalida);
+  @Override
+  public String getCiudad() {
+    return ciudad;
+  }
 
-  void setDuracionViaje(int duracionViaje);
+  @Override
+  public int getDiasDuracionViaje() {
+    return diasDuracionViaje;
+  }
 
-  void setPrecio(float precio);
+  @Override
+  public float getPrecio() {
+    return precio;
+  }
+
+  // setter
+
+  @Override
+  public void setCiudad(String ciudad) {
+    this.ciudad = ciudad;
+  }
+
+  @Override
+  public void setDiasDuracionViaje(int diasDuracionViaje) {
+    this.diasDuracionViaje = diasDuracionViaje;
+  }
+
+  @Override
+  public void setPrecio(float precio) {
+    this.precio = precio;
+  }
+
+  // constructores
+
+  public Viaje() {}
+
+  public Viaje(String tituloEntretenimiento, String ciudad, int diasDuracionViaje, float precio) {
+    super(tituloEntretenimiento);
+    this.ciudad = ciudad;
+    this.diasDuracionViaje = diasDuracionViaje;
+  }
+
+
 
 }

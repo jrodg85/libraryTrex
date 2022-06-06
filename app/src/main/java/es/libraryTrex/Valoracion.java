@@ -1,48 +1,62 @@
 package es.libraryTrex;
 
-import java.time.LocalDateTime;
-
 public class Valoracion {
 
-  // CAMPOS O ATRIBUTOS
-  private String comentario;
-  private int puntuacion;
-  private LocalDateTime fechaPublicacion;
+  // campos
 
-  // GETTERS
+  private long idComentario;
+  private String tituloComentario;
+  private String comentario;
+  private float puntuacion;
+
+  // getters
+
+  public long getIdComentario() {
+    return idComentario;
+  }
+
+  public String getTituloComantario() {
+    return tituloComentario;
+  }
+
   public String getComentario() {
     return comentario;
   }
 
-  public int getPuntuacion() {
+  public float getPuntuacion() {
     return puntuacion;
   }
 
-  public LocalDateTime getFechaPublicacion() {
-    return fechaPublicacion;
+  // setters
+
+  public void setIdComentario(long idComentario) {
+    this.idComentario = idComentario;
   }
 
-  // SETTERS
+  public void setTituloComantario(String tituloComentario) {
+    this.tituloComentario = tituloComentario;
+  }
+
   public void setComentario(String comentario) {
     this.comentario = comentario;
   }
 
-  public void setPuntuacion(int puntuacion) {
+  public void setPuntuacion(float puntuacion) {
     this.puntuacion = puntuacion;
   }
 
-  public void setFechaPublicacion(LocalDateTime fechaPublicacion) {
-    this.fechaPublicacion = fechaPublicacion;
-  }
+  // constructores
 
-  // CONSTRUCTORES
   public Valoracion() {}
 
-  public Valoracion(String comentario, int puntuacion) {
-    super();
+
+  public Valoracion(String tituloComentario, String comentario, float puntuacion) {
+    this.tituloComentario = tituloComentario;
     this.comentario = comentario;
     this.puntuacion = puntuacion;
-    this.fechaPublicacion = LocalDateTime.now();
+
+
+
   }
 
 }

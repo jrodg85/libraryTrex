@@ -1,13 +1,19 @@
 package es.libraryTrex;
 
+
+
 public interface ActividadInterfaz {
 
-  public String getCiudad();
+  Coordinador getCoordinador();
 
-  public Coordinador getCoordinador();
+  String getTipoActividadString();
 
-  void setCiudad(String ciudad);
+  String getDificultadActividad();
 
   void setCoordinador(Coordinador coordinador);
+
+  void setTipoActividadString(String tipoActividad);
+
+  void setDificultadActividad(String dificultadActividad);
 
 }
