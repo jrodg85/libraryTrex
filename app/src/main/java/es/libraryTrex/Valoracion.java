@@ -15,7 +15,7 @@ public class Valoracion {
     return idComentario;
   }
 
-  public String getTituloComantario() {
+  public String getTituloComentario() {
     return tituloComentario;
   }
 
@@ -33,7 +33,7 @@ public class Valoracion {
     this.idComentario = idComentario;
   }
 
-  public void setTituloComantario(String tituloComentario) {
+  public void setTituloComentario(String tituloComentario) {
     this.tituloComentario = tituloComentario;
   }
 
