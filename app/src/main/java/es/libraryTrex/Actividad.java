@@ -4,14 +4,14 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
 
   // atributos
 
-  private Coordinador coordinador;
+  private String coordinador;
   private String tipoActividad;
   private String dificultadActividad;
 
   // getter
 
   @Override
-  public Coordinador getCoordinador() {
+  public String getCoordinador() {
     return coordinador;
   }
 
@@ -29,7 +29,7 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
   // setter
 
   @Override
-  public void setCoordinador(Coordinador coordinador) {
+  public void setCoordinador(String coordinador) {
     this.coordinador = coordinador;
   }
 
@@ -50,7 +50,7 @@ public class Actividad extends Entretenimiento implements ActividadInterfaz {
   }
 
 
-  public Actividad(String tituloEntretenimiento, String descripcion, Coordinador coordinador,
+  public Actividad(String tituloEntretenimiento, String descripcion, String coordinador,
       String tipoActividad, String dificultadActividad) {
     super(tituloEntretenimiento, descripcion);
     this.coordinador = coordinador;
